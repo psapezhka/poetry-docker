@@ -42,292 +42,6 @@ jobs:
             BASE_IMAGE_VERSION=latest
             POETRY_VERSION=2.2.1
 
-      - name: Build and push (3.9.23-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.9.23-trixie,weastur/poetry:2.2.1-python-3.9.23-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.9.23-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.9.23)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.9.23,weastur/poetry:2.2.1-python-3.9.23
-          build-args: |
-            BASE_IMAGE_VERSION=3.9.23
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.9-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.9-trixie,weastur/poetry:2.2.1-python-3.9-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.9-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.9)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.9,weastur/poetry:2.2.1-python-3.9
-          build-args: |
-            BASE_IMAGE_VERSION=3.9
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.12.11-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.12.11-trixie,weastur/poetry:2.2.1-python-3.12.11-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.12.11-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.12.11)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.12.11,weastur/poetry:2.2.1-python-3.12.11
-          build-args: |
-            BASE_IMAGE_VERSION=3.12.11
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.12-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.12-trixie,weastur/poetry:2.2.1-python-3.12-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.12-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.12)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.12,weastur/poetry:2.2.1-python-3.12
-          build-args: |
-            BASE_IMAGE_VERSION=3.12
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.11.13-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.11.13-trixie,weastur/poetry:2.2.1-python-3.11.13-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.11.13-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.11.13)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.11.13,weastur/poetry:2.2.1-python-3.11.13
-          build-args: |
-            BASE_IMAGE_VERSION=3.11.13
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.11-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.11-trixie,weastur/poetry:2.2.1-python-3.11-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.11-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.11)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/arm64/v8,linux/amd64
-          push: true
-          tags: weastur/poetry:latest-python-3.11,weastur/poetry:2.2.1-python-3.11
-          build-args: |
-            BASE_IMAGE_VERSION=3.11
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.10.18-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/arm64/v8,linux/amd64
-          push: true
-          tags: weastur/poetry:latest-python-3.10.18-trixie,weastur/poetry:2.2.1-python-3.10.18-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.10.18-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.10.18)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.10.18,weastur/poetry:2.2.1-python-3.10.18
-          build-args: |
-            BASE_IMAGE_VERSION=3.10.18
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.10-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.10-trixie,weastur/poetry:2.2.1-python-3.10-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.10-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.10)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.10,weastur/poetry:2.2.1-python-3.10
-          build-args: |
-            BASE_IMAGE_VERSION=3.10
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.13.7-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.13.7-trixie,weastur/poetry:2.2.1-python-3.13.7-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.13.7-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.13.7)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/arm64/v8,linux/amd64
-          push: true
-          tags: weastur/poetry:latest-python-3.13.7,weastur/poetry:2.2.1-python-3.13.7
-          build-args: |
-            BASE_IMAGE_VERSION=3.13.7
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.13-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.13-trixie,weastur/poetry:2.2.1-python-3.13-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3.13-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.13)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.13,weastur/poetry:2.2.1-python-3.13
-          build-args: |
-            BASE_IMAGE_VERSION=3.13
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3-trixie)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3-trixie,weastur/poetry:2.2.1-python-3-trixie
-          build-args: |
-            BASE_IMAGE_VERSION=3-trixie
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3,weastur/poetry:2.2.1-python-3
-          build-args: |
-            BASE_IMAGE_VERSION=3
-            POETRY_VERSION=2.2.1
-
       - name: Build and push (3.9.23-slim-trixie)
         uses: docker/build-push-action@v6
         continue-on-error: false
@@ -555,7 +269,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
+          platforms: linux/arm64/v8,linux/amd64
           push: true
           tags: weastur/poetry:latest-python-3.12.11-slim,weastur/poetry:2.2.1-python-3.12.11-slim
           build-args: |
@@ -568,7 +282,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
+          platforms: linux/arm64/v8,linux/amd64
           push: true
           tags: weastur/poetry:latest-python-3.12-slim-trixie,weastur/poetry:2.2.1-python-3.12-slim-trixie
           build-args: |
@@ -581,7 +295,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: linux/arm64/v8,linux/amd64
+          platforms: linux/amd64,linux/arm64/v8
           push: true
           tags: weastur/poetry:latest-python-3.12-slim,weastur/poetry:2.2.1-python-3.12-slim
           build-args: |
@@ -614,7 +328,7 @@ jobs:
             BASE_IMAGE_VERSION=3-slim
             POETRY_VERSION=2.2.1
 
-      - name: Build and push (3.9.23-bookworm)
+      - name: Build and push (3.9.23-trixie)
         uses: docker/build-push-action@v6
         continue-on-error: false
         with:
@@ -622,139 +336,9 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: weastur/poetry:latest-python-3.9.23-bookworm,weastur/poetry:2.2.1-python-3.9.23-bookworm
+          tags: weastur/poetry:latest-python-3.9.23-trixie,weastur/poetry:2.2.1-python-3.9.23-trixie
           build-args: |
-            BASE_IMAGE_VERSION=3.9.23-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.9-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.9-bookworm,weastur/poetry:2.2.1-python-3.9-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.9-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.13.7-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.13.7-bookworm,weastur/poetry:2.2.1-python-3.13.7-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.13.7-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.13-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.13-bookworm,weastur/poetry:2.2.1-python-3.13-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.13-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.12.11-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.12.11-bookworm,weastur/poetry:2.2.1-python-3.12.11-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.12.11-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.12-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.12-bookworm,weastur/poetry:2.2.1-python-3.12-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.12-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.11.13-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.11.13-bookworm,weastur/poetry:2.2.1-python-3.11.13-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.11.13-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.11-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.11-bookworm,weastur/poetry:2.2.1-python-3.11-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.11-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.10.18-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.10.18-bookworm,weastur/poetry:2.2.1-python-3.10.18-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.10.18-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3.10-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3.10-bookworm,weastur/poetry:2.2.1-python-3.10-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3.10-bookworm
-            POETRY_VERSION=2.2.1
-
-      - name: Build and push (3-bookworm)
-        uses: docker/build-push-action@v6
-        continue-on-error: false
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64/v8
-          push: true
-          tags: weastur/poetry:latest-python-3-bookworm,weastur/poetry:2.2.1-python-3-bookworm
-          build-args: |
-            BASE_IMAGE_VERSION=3-bookworm
+            BASE_IMAGE_VERSION=3.9.23-trixie
             POETRY_VERSION=2.2.1
 
       - name: Build and push (3.9.23-slim-bookworm)
@@ -770,6 +354,45 @@ jobs:
             BASE_IMAGE_VERSION=3.9.23-slim-bookworm
             POETRY_VERSION=2.2.1
 
+      - name: Build and push (3.9.23-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.9.23-bookworm,weastur/poetry:2.2.1-python-3.9.23-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.9.23-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.9.23)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.9.23,weastur/poetry:2.2.1-python-3.9.23
+          build-args: |
+            BASE_IMAGE_VERSION=3.9.23
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.9-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.9-trixie,weastur/poetry:2.2.1-python-3.9-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.9-trixie
+            POETRY_VERSION=2.2.1
+
       - name: Build and push (3.9-slim-bookworm)
         uses: docker/build-push-action@v6
         continue-on-error: false
@@ -781,6 +404,45 @@ jobs:
           tags: weastur/poetry:latest-python-3.9-slim-bookworm,weastur/poetry:2.2.1-python-3.9-slim-bookworm
           build-args: |
             BASE_IMAGE_VERSION=3.9-slim-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.9-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.9-bookworm,weastur/poetry:2.2.1-python-3.9-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.9-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.9)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.9,weastur/poetry:2.2.1-python-3.9
+          build-args: |
+            BASE_IMAGE_VERSION=3.9
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.13.7-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.13.7-trixie,weastur/poetry:2.2.1-python-3.13.7-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.13.7-trixie
             POETRY_VERSION=2.2.1
 
       - name: Build and push (3.13.7-slim-bookworm)
@@ -796,6 +458,45 @@ jobs:
             BASE_IMAGE_VERSION=3.13.7-slim-bookworm
             POETRY_VERSION=2.2.1
 
+      - name: Build and push (3.13.7-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.13.7-bookworm,weastur/poetry:2.2.1-python-3.13.7-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.13.7-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.13.7)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.13.7,weastur/poetry:2.2.1-python-3.13.7
+          build-args: |
+            BASE_IMAGE_VERSION=3.13.7
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.13-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.13-trixie,weastur/poetry:2.2.1-python-3.13-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.13-trixie
+            POETRY_VERSION=2.2.1
+
       - name: Build and push (3.13-slim-bookworm)
         uses: docker/build-push-action@v6
         continue-on-error: false
@@ -807,6 +508,45 @@ jobs:
           tags: weastur/poetry:latest-python-3.13-slim-bookworm,weastur/poetry:2.2.1-python-3.13-slim-bookworm
           build-args: |
             BASE_IMAGE_VERSION=3.13-slim-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.13-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.13-bookworm,weastur/poetry:2.2.1-python-3.13-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.13-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.13)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.13,weastur/poetry:2.2.1-python-3.13
+          build-args: |
+            BASE_IMAGE_VERSION=3.13
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.12.11-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.12.11-trixie,weastur/poetry:2.2.1-python-3.12.11-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.12.11-trixie
             POETRY_VERSION=2.2.1
 
       - name: Build and push (3.12.11-slim-bookworm)
@@ -822,6 +562,45 @@ jobs:
             BASE_IMAGE_VERSION=3.12.11-slim-bookworm
             POETRY_VERSION=2.2.1
 
+      - name: Build and push (3.12.11-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.12.11-bookworm,weastur/poetry:2.2.1-python-3.12.11-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.12.11-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.12.11)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.12.11,weastur/poetry:2.2.1-python-3.12.11
+          build-args: |
+            BASE_IMAGE_VERSION=3.12.11
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.12-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.12-trixie,weastur/poetry:2.2.1-python-3.12-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.12-trixie
+            POETRY_VERSION=2.2.1
+
       - name: Build and push (3.12-slim-bookworm)
         uses: docker/build-push-action@v6
         continue-on-error: false
@@ -833,6 +612,45 @@ jobs:
           tags: weastur/poetry:latest-python-3.12-slim-bookworm,weastur/poetry:2.2.1-python-3.12-slim-bookworm
           build-args: |
             BASE_IMAGE_VERSION=3.12-slim-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.12-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.12-bookworm,weastur/poetry:2.2.1-python-3.12-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.12-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.12)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.12,weastur/poetry:2.2.1-python-3.12
+          build-args: |
+            BASE_IMAGE_VERSION=3.12
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.11.13-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.11.13-trixie,weastur/poetry:2.2.1-python-3.11.13-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.11.13-trixie
             POETRY_VERSION=2.2.1
 
       - name: Build and push (3.11.13-slim-bookworm)
@@ -848,6 +666,45 @@ jobs:
             BASE_IMAGE_VERSION=3.11.13-slim-bookworm
             POETRY_VERSION=2.2.1
 
+      - name: Build and push (3.11.13-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.11.13-bookworm,weastur/poetry:2.2.1-python-3.11.13-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.11.13-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.11.13)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.11.13,weastur/poetry:2.2.1-python-3.11.13
+          build-args: |
+            BASE_IMAGE_VERSION=3.11.13
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.11-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.11-trixie,weastur/poetry:2.2.1-python-3.11-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.11-trixie
+            POETRY_VERSION=2.2.1
+
       - name: Build and push (3.11-slim-bookworm)
         uses: docker/build-push-action@v6
         continue-on-error: false
@@ -859,6 +716,45 @@ jobs:
           tags: weastur/poetry:latest-python-3.11-slim-bookworm,weastur/poetry:2.2.1-python-3.11-slim-bookworm
           build-args: |
             BASE_IMAGE_VERSION=3.11-slim-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.11-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.11-bookworm,weastur/poetry:2.2.1-python-3.11-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.11-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.11)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.11,weastur/poetry:2.2.1-python-3.11
+          build-args: |
+            BASE_IMAGE_VERSION=3.11
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.10.18-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.10.18-trixie,weastur/poetry:2.2.1-python-3.10.18-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.10.18-trixie
             POETRY_VERSION=2.2.1
 
       - name: Build and push (3.10.18-slim-bookworm)
@@ -874,6 +770,45 @@ jobs:
             BASE_IMAGE_VERSION=3.10.18-slim-bookworm
             POETRY_VERSION=2.2.1
 
+      - name: Build and push (3.10.18-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.10.18-bookworm,weastur/poetry:2.2.1-python-3.10.18-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.10.18-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.10.18)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.10.18,weastur/poetry:2.2.1-python-3.10.18
+          build-args: |
+            BASE_IMAGE_VERSION=3.10.18
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.10-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.10-trixie,weastur/poetry:2.2.1-python-3.10-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3.10-trixie
+            POETRY_VERSION=2.2.1
+
       - name: Build and push (3.10-slim-bookworm)
         uses: docker/build-push-action@v6
         continue-on-error: false
@@ -887,6 +822,45 @@ jobs:
             BASE_IMAGE_VERSION=3.10-slim-bookworm
             POETRY_VERSION=2.2.1
 
+      - name: Build and push (3.10-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.10-bookworm,weastur/poetry:2.2.1-python-3.10-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3.10-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3.10)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3.10,weastur/poetry:2.2.1-python-3.10
+          build-args: |
+            BASE_IMAGE_VERSION=3.10
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3-trixie)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3-trixie,weastur/poetry:2.2.1-python-3-trixie
+          build-args: |
+            BASE_IMAGE_VERSION=3-trixie
+            POETRY_VERSION=2.2.1
+
       - name: Build and push (3-slim-bookworm)
         uses: docker/build-push-action@v6
         continue-on-error: false
@@ -898,6 +872,32 @@ jobs:
           tags: weastur/poetry:latest-python-3-slim-bookworm,weastur/poetry:2.2.1-python-3-slim-bookworm
           build-args: |
             BASE_IMAGE_VERSION=3-slim-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3-bookworm)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3-bookworm,weastur/poetry:2.2.1-python-3-bookworm
+          build-args: |
+            BASE_IMAGE_VERSION=3-bookworm
+            POETRY_VERSION=2.2.1
+
+      - name: Build and push (3)
+        uses: docker/build-push-action@v6
+        continue-on-error: false
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64/v8
+          push: true
+          tags: weastur/poetry:latest-python-3,weastur/poetry:2.2.1-python-3
+          build-args: |
+            BASE_IMAGE_VERSION=3
             POETRY_VERSION=2.2.1
 
       - name: Build and push (3.13.7-alpine3.21)
